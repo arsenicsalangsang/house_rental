@@ -11,11 +11,6 @@
 			$_SESSION['system'][$k] = $v;
 		}
 	}
-	ob_end_flush();
-	if(isset($_SESSION['login_id'])) {
-		header("location:index.php?page=home");
-		exit; 
-	}
 ?>
 
 <head>
@@ -29,6 +24,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap" rel="stylesheet">
   <?php include('./header.php'); ?>
+  <?php 
+    if(isset($_SESSION['login_id']))
+    header("location:index.php?page=home");
+    ?>
 </head>
 
 <style>
