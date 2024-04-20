@@ -175,11 +175,7 @@
         color: black;
         border: 2px solid black;
         border-radius: 10px;
-        padding: 10px;
-        width: 234px;   
-        position: relative;
-        top: 160px;
-        left: 508px;
+        padding: 10px;   
     }
 
     #loginbtn{
@@ -188,10 +184,6 @@
         border-radius: 10px;
         border: 2px solid #c59452;
         padding: 10px;
-        width: 234px;
-        position: relative;
-        top: 160px;
-        left: 520px;
     }
     
     #fpassbtn{
@@ -201,8 +193,18 @@
         border-radius: 10px;
         width: 480px;
         position: relative;
-        top: 215px;
-        left: 35px;
+        top: 15px;
+    }
+
+    .button-container {
+        margin-top: 15px;
+        text-align: center; 
+    }
+
+    #loginbtn, #signupbtn {
+        display: inline-block;
+        width: 234px; 
+        margin: 0 10px; 
     }
 
     footer{
@@ -242,10 +244,12 @@
 				<h4 class = "title-input">Password</h4>
             	<input type="text" name="password" placeholder="Enter your password" class="custom-input">
 			</div>
+            <div class="button-container">
+                <button type="button" id="loginbtn">Existing User? Login Here</button>
+                <button type="submit" id="signupbtn">Sign Up</button>
+            </div>
+            <button id = "fpassbtn">Forgot Password?</button>
         </form>
-        <button id = "signupbtn">New User? Create Account</button>
-        <button id = "loginbtn" type = "submit">Login</button>
-        <button id = "fpassbtn">Forgot Password?</button>
 	</div>
   </section>
 

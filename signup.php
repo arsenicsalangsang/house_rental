@@ -198,12 +198,6 @@
         width: 234px; 
         margin: 0 10px; 
     }
-
-    #loginbtn, #signupbtn {
-        display: inline-block;
-        width: 234px; 
-        margin-right: 10px; 
-    }
     
     footer{
     font-family: 'Roboto', sans-serif;
