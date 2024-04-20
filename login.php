@@ -4,6 +4,7 @@
 session_start();
 include('./db_connect.php');
 ob_start();
+
 if(!isset($_SESSION['system'])){
 	$system = $conn->query("SELECT * FROM system_settings limit 1")->fetch_array();
 	foreach($system as $k => $v){
@@ -16,8 +17,8 @@ ob_end_flush();
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title><?php echo $_SESSION['system']['name'] ?></title>
- 	
+  <title><?php echo $_SESSION['system']['name'] = "LivWell"; ?></title>
+  <link rel="icon" type="image/png" href="assets\pictures\livwellLogo.png">
 
 <?php include('./header.php'); ?>
 <?php 
