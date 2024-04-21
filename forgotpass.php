@@ -233,7 +233,14 @@
   </footer>
 </body>
 
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
+	$(document).ready(function() {
+
+		$('#loginbtn').click(function() {
+                window.location.href = 'login.php';
+        });
+	});
 </script>
 
 </html>
