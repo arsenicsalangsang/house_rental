@@ -170,20 +170,20 @@
         color: black;
 	}
 
-    #signupbtn{
-        background-color: #E1D5C9;
-        color: black;
-        border: 2px solid black;
-        border-radius: 10px;
-        padding: 10px;   
-    }
-
     #loginbtn{
-        background-color: #c59452;
+	    background-color: #c59452;
         color: white;
         border-radius: 10px;
         border: 2px solid #c59452;
         padding: 10px;
+    }
+
+    #signupbtn{
+		background-color: #E1D5C9;
+        color: black;
+        border: 2px solid black;
+        border-radius: 10px;
+        padding: 10px; 
     }
     
     #fpassbtn{
@@ -201,7 +201,7 @@
         text-align: center; 
     }
 
-    #loginbtn, #signupbtn {
+    #signupbtn, #loginbtn {
         display: inline-block;
         width: 234px; 
         margin: 0 10px; 
@@ -242,11 +242,11 @@
 			</div>
 			<div>
 				<h4 class = "title-input">Password</h4>
-            	<input type="text" name="password" placeholder="Enter your password" class="custom-input">
+            	<input type="password" name="password" placeholder="Enter your password" class="custom-input">
 			</div>
             <div class="button-container">
-                <button type="button" id="loginbtn">Existing User? Login Here</button>
-                <button type="submit" id="signupbtn">Sign Up</button>
+                <button type="button" id="signupbtn">New User? Create Account</button>
+                <button type="submit" id="loginbtn">Login</button>
             </div>
             <button id = "fpassbtn">Forgot Password?</button>
         </form>
@@ -258,8 +258,41 @@
     <p>Copyright &#169; 2024 LivWell: Apartment Management System. All Rights Reserved.</p>
   </footer>
 </body>
-
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
-</script>
+	$(document).ready(function() {
 
+		$('#signupbtn').click(function() {
+                window.location.href = 'signup.php';
+        });
+
+		$('#fpassbtn').click(function() {
+                window.location.href = 'forgotpass.php';
+        });
+
+		$('#input-form').submit(function(e) {
+			e.preventDefault();
+			$('#loginbtn').attr('disabled', true).html('Logging in...');
+			if ($(this).find('.alert-danger').length > 0)
+				$(this).find('.alert-danger').remove();
+			$.ajax({
+				url: 'ajax.php?action=login',
+				method: 'POST',
+				data: $(this).serialize(),
+				error: function(err) {
+					console.log(err);
+					$('#loginbtn').removeAttr('disabled').html('Login');
+				},
+				success: function(resp) {
+					if (resp == 1) {
+						location.href = 'index.php?page=home';
+					} else {
+						$('#input-form').prepend('<div class="alert alert-danger">Username or password is incorrect.</div>');
+						$('#loginbtn').removeAttr('disabled').html('Login');
+					}
+				}
+			});
+		});
+	});
+</script>
 </html>
