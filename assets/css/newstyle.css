@@ -347,7 +347,6 @@ body {
   left: 50%;
   transform: translateX(-50%);
   font-family: "Roboto", sans-serif;
-  color: black;
   font-size: 16px;
 }
 
@@ -385,7 +384,6 @@ body {
   margin-bottom: 2px;
   margin-left: 5px;
   font-size: 14px;
-  color: black;
 }
 
 #loginbtnMain {
@@ -422,23 +420,46 @@ body {
 }
 
 #signupbtnMain,
-#loginbtnMain {
+#loginbtnMain,
+#loginbtn-signup,
+#signupbtn-signup {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   display: inline-block;
   width: 234px;
   margin: 0 10px;
 }
-.alert {
-  padding: 15px;
-  border-radius: 5px;
-  background-color: #f44336; /* Red background color */
-  color: white; /* White text color */
-  margin-bottom: 20px; /* Margin to separate from other elements */
-}
 
 footer {
   font-family: "Roboto", sans-serif;
   text-align: center;
   font-size: 15px;
+}
+
+/* ===== Signup ===== */
+
+.wrapper-signup {
+  align-items: center;
+  background-color: #e1d5c9;
+  width: 1519px;
+  height: 750px;
+  margin-top: 50px;
+  position: relative;
+}
+#loginbtn-signup {
+  background-color: #e1d5c9;
+  color: black;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 10px;
+  width: 234px;
+}
+
+#signupbtn-signup {
+  background-color: #c59452;
+  color: white;
+  border-radius: 10px;
+  border: 2px solid #c59452;
+  padding: 10px;
+  width: 234px;
 }
