@@ -422,7 +422,8 @@ body {
 #signupbtnMain,
 #loginbtnMain,
 #loginbtn-signup,
-#signupbtn-signup {
+#signupbtn-signup,
+#submitbtn {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   display: inline-block;
@@ -446,6 +447,7 @@ footer {
   margin-top: 50px;
   position: relative;
 }
+
 #loginbtn-signup {
   background-color: #e1d5c9;
   color: black;
@@ -462,4 +464,32 @@ footer {
   border: 2px solid #c59452;
   padding: 10px;
   width: 234px;
+}
+
+/* ===== Forgot Password ===== */
+.wrapper-forgot {
+  align-items: center;
+  background-color: #e1d5c9;
+  width: 1519px;
+  height: 400px;
+  margin-top: 120px;
+  position: relative;
+  margin-bottom: 112px;
+}
+
+#input-form-forgot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  position: relative;
+  top: 180px;
+}
+
+#submitbtn {
+  background-color: #c59452;
+  color: white;
+  border-radius: 10px;
+  border: 2px solid #c59452;
+  padding: 10px;
 }
