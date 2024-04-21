@@ -246,11 +246,11 @@
 			</div>
 			<div>
 				<h4 class = "title-input">Password</h4>
-            	<input type="text" name="password" placeholder="Enter a password" class="custom-input">
+            	<input type="password" name="password" placeholder="Enter a password" class="custom-input">
 			</div>
 			<div>
 				<h4 class = "title-input">Confirm Password</h4>
-            	<input type="text" name="password" placeholder="Confirm your password" class="custom-input">
+            	<input type="password" name="password" placeholder="Confirm your password" class="custom-input">
 			</div>
             <div class="button-container">
                 <button type="button" id="loginbtn">Existing User? Login Here</button>
@@ -266,7 +266,14 @@
   </footer>
 </body>
 
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
+	$(document).ready(function() {
+
+		$('#loginbtn').click(function() {
+                window.location.href = 'login.php';
+        });
+	});
 </script>
 
 </html>
