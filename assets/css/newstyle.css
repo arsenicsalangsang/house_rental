@@ -278,6 +278,7 @@ body {
 #title7 {
   font-family: "Roboto", sans-serif;
   position: absolute;
+  font-size: 40px;
   top: 50px;
   left: 100px;
 }
