@@ -429,6 +429,13 @@ body {
   width: 234px;
   margin: 0 10px;
 }
+.alert {
+  padding: 15px;
+  border-radius: 5px;
+  background-color: #f44336; /* Red background color */
+  color: white; /* White text color */
+  margin-bottom: 20px; /* Margin to separate from other elements */
+}
 
 footer {
   font-family: "Roboto", sans-serif;

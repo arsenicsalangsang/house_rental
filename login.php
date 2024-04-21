@@ -97,7 +97,8 @@
 					if (resp == 1) {
 						location.href = 'index.php?page=home';
 					} else {
-						$('#input-formMain').prepend('<div class="alert alert-danger">Username or password is incorrect.</div>');
+						alert("Username or password is incorrect.");
+						$('#input-formMain')[0].reset(); // Clear input fields
 						$('#loginbtnMain').removeAttr('disabled').html('Login');
 					}
 				}
