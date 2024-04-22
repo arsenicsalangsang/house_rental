@@ -29,3 +29,21 @@
   font-family: "Roboto", sans-serif;
   font-size: 16px;
 }
+
+/* ===== Navbar ===== */
+
+.collapse a {
+  text-indent: 10px;
+}
+
+.sidebar-style {
+  background-color: #3c34340d !important;
+}
+
+.sidebar-style .sidebar-list a:hover {
+  background-color: rgba(60, 52, 52, 0.2);
+}
+
+.sidebar-style .sidebar-list a:active {
+  background-color: rgba(60, 52, 52, 0.4);
+}
