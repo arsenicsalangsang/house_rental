@@ -25,6 +25,7 @@
     header("location:index.php?page=home");
     ?>
 </head>
+
 <body>
   <!-- ===== Navigation ===== -->
   <section id = "header">
@@ -42,23 +43,38 @@
   <!-- ===== Main ===== -->
   <section id = "main">
 	<h1 id = "titleMain"> Join us with an Account </h1>
-	<div class = "wrapperMain">
-		<h2 id = "title1Main"> Login </h2>
-		<p id = "descriptionMain"> Sign in to your account </p>
+	<div class = "wrapper-signup">
+		<h2 id = "title1Main"> Sign Up </h2>
+		<p id = "descriptionMain"> Create your account </p>
 		<form id = "input-formMain">
+			<div>
+				<h4 class = "title-inputMain">Email</h4>
+            	<input type="text" name="email" placeholder="Enter your email" class="custom-inputMain">
+			</div>
+			<div>
+				<h4 class = "title-inputMain">First Name</h4>
+            	<input type="text" name="firstname" placeholder="Enter your first name" class="custom-inputMain">
+			</div>
+			<div>
+				<h4 class = "title-inputMain">Last Name</h4>
+            	<input type="text" name="lastname" placeholder="Enter your last name" class="custom-inputMain">
+			</div>
 			<div>
 				<h4 class = "title-inputMain">Username</h4>
             	<input type="text" name="username" placeholder="Enter your username" class="custom-inputMain">
 			</div>
 			<div>
 				<h4 class = "title-inputMain">Password</h4>
-            	<input type="password" name="password" placeholder="Enter your password" class="custom-inputMain">
+            	<input type="password" name="password" placeholder="Enter a password" class="custom-inputMain">
+			</div>
+			<div>
+				<h4 class = "title-inputMain">Confirm Password</h4>
+            	<input type="password" name="password" placeholder="Confirm your password" class="custom-inputMain">
 			</div>
             <div class="button-container">
-                <button type="button" id="signupbtnMain">New User? Create Account</button>
-                <button type="submit" id="loginbtnMain">Login</button>
+                <button type="button" id="loginbtn-signup">Existing User? Login Here</button>
+                <button type="submit" id="signupbtn-signup">Sign Up</button>
             </div>
-            <button id = "fpassbtn">Forgot Password?</button>
         </form>
 	</div>
   </section>
@@ -68,42 +84,15 @@
     <p>Copyright &#169; 2024 LivWell: Apartment Management System. All Rights Reserved.</p>
   </footer>
 </body>
+
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
 	$(document).ready(function() {
 
-		$('#signupbtnMain').click(function() {
-                window.location.href = 'signup.php';
+		$('#loginbtn-signup').click(function() {
+                window.location.href = 'login.php';
         });
-
-		$('#fpassbtn').click(function() {
-                window.location.href = 'forgotpass.php';
-        });
-
-		$('#input-formMain').submit(function(e) {
-			e.preventDefault();
-			$('#loginbtnMain').attr('disabled', true).html('Logging in...');
-			if ($(this).find('.alert-danger').length > 0)
-				$(this).find('.alert-danger').remove();
-			$.ajax({
-				url: 'ajax.php?action=login',
-				method: 'POST',
-				data: $(this).serialize(),
-				error: function(err) {
-					console.log(err);
-					$('#loginbtnMain').removeAttr('disabled').html('Login');
-				},
-				success: function(resp) {
-					if (resp == 1) {
-						location.href = 'index.php?page=home';
-					} else {
-						alert("Username or password is incorrect.");
-						$('#input-formMain')[0].reset(); // Clear input fields
-						$('#loginbtnMain').removeAttr('disabled').html('Login');
-					}
-				}
-			});
-		});
 	});
 </script>
+
 </html>

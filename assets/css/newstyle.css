@@ -1,0 +1,496 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* ===== Navigation ===== */
+#desktop-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+#logoimg {
+  width: 50px;
+  margin-left: 30px;
+  margin-right: 10px;
+}
+
+.logoText {
+  font-family: "Sansita", sans-serif;
+  font-style: italic;
+  font-size: 25px;
+  font-weight: bold;
+  color: #c59452;
+  margin-right: 20px;
+}
+
+#nav-links {
+  display: flex;
+  justify-content: flex-end;
+  flex-grow: 1;
+  margin-right: 45px;
+}
+
+#nav-links ul {
+  margin: 0;
+  padding: 0;
+}
+
+#nav-links li {
+  list-style: none;
+  margin-left: 20px;
+}
+
+#nav-links li a {
+  font-family: "Roboto", sans-serif;
+  color: black;
+  text-decoration: none;
+  font-size: 16px;
+  position: relative;
+}
+
+#nav-links li a::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: #e1d5c9;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+
+#nav-links li a:hover {
+  color: #c59452;
+}
+
+#nav-links li a:hover::after {
+  width: 100%;
+}
+
+/* ===== Home ===== */
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #e1d5c9;
+  width: 1519px;
+  height: 520px;
+  padding: 60px 0 0 0;
+  gap: 60px;
+  box-sizing: border-box;
+  margin-top: 20px;
+}
+
+.content {
+  margin-left: 80px;
+  margin-bottom: 50px;
+}
+
+#button-start {
+  display: inline-block;
+  background-color: black;
+  color: white;
+  padding: 3%;
+  border-radius: 1rem;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+#title,
+#description,
+#button-start {
+  font-family: "Roboto", sans-serif;
+}
+
+#hppic {
+  margin-bottom: 62px;
+  flex-shrink: 0;
+  margin-right: 20px;
+}
+
+/* ===== Preview ===== */
+
+#preview {
+  margin-bottom: 75px;
+}
+
+#title2 {
+  font-family: "Sansita", sans-serif;
+  font-style: bold;
+  font-size: 48px;
+  font-weight: 400px;
+  color: #c59452;
+  text-align: center;
+}
+
+/* ===== Quick Stats ===== */
+
+#title3,
+#title4,
+#descr,
+#title5 {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+}
+
+.quickstats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  margin-top: 50px;
+  margin-left: 170px;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  width: 260px;
+  font-weight: 300;
+  border-right: 10px;
+  border-radius: 10px;
+}
+
+.class {
+  padding: 40px;
+  font-weight: 300;
+  border-right: 10px;
+  border-radius: 10px;
+}
+
+#icon {
+  width: 60px;
+  height: 60px;
+}
+
+#title4 {
+  margin-bottom: 5px;
+}
+
+/* ===== Add New Apartment ===== */
+
+.wrapper1 {
+  align-items: center;
+  background-color: #e1d5c9;
+  width: 1519px;
+  height: 480px;
+  margin-top: 20px;
+  position: relative;
+}
+
+#title5 {
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.input-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  position: relative;
+  top: 110px;
+}
+
+.custom-input {
+  padding: 10px;
+  margin-bottom: 2px;
+  border: none;
+  border-radius: 10px;
+  background-color: white;
+  outline: none;
+  width: 500px;
+}
+
+.title-input {
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 2px;
+  margin-left: 5px;
+}
+
+/* ===== About Us ===== */
+.wrapper2 {
+  align-items: center;
+  background-color: #e1d5c9;
+  width: 1519px;
+  height: 600px;
+  margin-top: 20px;
+  position: relative;
+}
+
+#des {
+  position: absolute;
+  top: 90px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "Roboto", sans-serif;
+}
+
+#tuppic {
+  position: absolute;
+  width: 600px;
+  height: 364px;
+  top: 200px;
+  left: 100px;
+  border: 4px solid white;
+  border-radius: 10px;
+}
+
+#fourpic {
+  position: absolute;
+  width: 600px;
+  top: 200px;
+  left: 800px;
+  border: 4px solid white;
+  border-radius: 10px;
+}
+
+/* ===== Objective ===== */
+#title6 {
+  font-family: "Roboto", sans-serif;
+  margin-left: 100px;
+  margin-top: 50px;
+}
+
+#ovm {
+  font-family: "Roboto", sans-serif;
+  margin-left: 100px;
+}
+
+/* ===== Contact ===== */
+.wrapper3 {
+  align-items: center;
+  background-color: #e1d5c9;
+  width: 1519px;
+  height: 380px;
+  margin-top: 50px;
+  position: relative;
+}
+
+#title7 {
+  font-family: "Roboto", sans-serif;
+  position: absolute;
+  font-size: 40px;
+  top: 50px;
+  left: 100px;
+}
+
+#contact-des {
+  font-family: "Roboto", sans-serif;
+  position: absolute;
+  top: 100px;
+  left: 100px;
+}
+
+#icon1 {
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  left: 100px;
+  top: 180px;
+}
+
+#icon2 {
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  left: 100px;
+  top: 250px;
+}
+
+#fb {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  position: absolute;
+  left: 170px;
+  top: 170px;
+}
+
+#google {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  position: absolute;
+  left: 170px;
+  top: 240px;
+}
+
+/* ===== Main Login ===== */
+#titleMain {
+  font-family: "Sansita", sans-serif;
+  font-style: bold;
+  font-size: 48px;
+  font-weight: 400px;
+  color: #c59452;
+  text-align: center;
+  margin-top: 5px;
+}
+
+#title1Main {
+  font-family: "Roboto", sans-serif;
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 40px;
+}
+
+#descriptionMain {
+  position: absolute;
+  top: 105px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+.wrapperMain {
+  align-items: center;
+  background-color: #e1d5c9;
+  width: 1519px;
+  height: 480px;
+  margin-top: 50px;
+  position: relative;
+  margin-bottom: 41px;
+}
+
+#input-formMain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  position: relative;
+  top: 150px;
+}
+
+.custom-inputMain {
+  padding: 10px;
+  margin-bottom: 8px;
+  border: none;
+  border-radius: 10px;
+  background-color: white;
+  outline: none;
+  width: 600px;
+}
+
+.title-inputMain {
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 2px;
+  margin-left: 5px;
+  font-size: 14px;
+}
+
+#loginbtnMain {
+  background-color: #c59452;
+  color: white;
+  border-radius: 10px;
+  border: 2px solid #c59452;
+  padding: 10px;
+}
+
+#signupbtnMain {
+  background-color: #e1d5c9;
+  color: black;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+#fpassbtn {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  width: 480px;
+  position: relative;
+  top: 15px;
+}
+
+.button-container {
+  margin-top: 15px;
+  text-align: center;
+}
+
+#signupbtnMain,
+#loginbtnMain,
+#loginbtn-signup,
+#signupbtn-signup,
+#submitbtn {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  display: inline-block;
+  width: 234px;
+  margin: 0 10px;
+}
+
+footer {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  font-size: 15px;
+}
+
+/* ===== Signup ===== */
+
+.wrapper-signup {
+  align-items: center;
+  background-color: #e1d5c9;
+  width: 1519px;
+  height: 750px;
+  margin-top: 50px;
+  position: relative;
+}
+
+#loginbtn-signup {
+  background-color: #e1d5c9;
+  color: black;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 10px;
+  width: 234px;
+}
+
+#signupbtn-signup {
+  background-color: #c59452;
+  color: white;
+  border-radius: 10px;
+  border: 2px solid #c59452;
+  padding: 10px;
+  width: 234px;
+}
+
+/* ===== Forgot Password ===== */
+.wrapper-forgot {
+  align-items: center;
+  background-color: #e1d5c9;
+  width: 1519px;
+  height: 400px;
+  margin-top: 120px;
+  position: relative;
+  margin-bottom: 112px;
+}
+
+#input-form-forgot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  position: relative;
+  top: 180px;
+}
+
+#submitbtn {
+  background-color: #c59452;
+  color: white;
+  border-radius: 10px;
+  border: 2px solid #c59452;
+  padding: 10px;
+}

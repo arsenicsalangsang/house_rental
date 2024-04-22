@@ -1,13 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 	
-<?php session_start(); ?>
+<?php session_start();
+if(!isset($_SESSION['login_id'])) {
+    header('location: homepage.php');
+    exit();
+}
+?>
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
   <title><?php echo isset($_SESSION['system']['name']) ? $_SESSION['system']['name'] : '' ?></title>
- 	
+ 	<link rel="icon" type="image/png" href="assets\pictures\livwellLogo.png">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
 <?php
   if(!isset($_SESSION['login_id']))
@@ -18,9 +27,6 @@
 
 </head>
 <style>
-	body{
-        background: #80808045;
-  }
   .modal-dialog.large {
     width: 80% !important;
     max-width: unset;
