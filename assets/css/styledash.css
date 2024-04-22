@@ -47,3 +47,29 @@
 .sidebar-style .sidebar-list a:active {
   background-color: rgba(60, 52, 52, 0.4);
 }
+
+/* ===== Home ===== */
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #e1d5c9 !important;
+  width: 1519px;
+  height: 520px;
+  padding: 60px 0 0 0;
+  gap: 60px;
+  box-sizing: border-box;
+  position: relative;
+  left: -8px;
+  top: -58px;
+}
+
+.content {
+  margin-left: 80px;
+  margin-bottom: 50px;
+}
+
+#title,
+#description {
+  font-family: "Roboto", sans-serif;
+}
