@@ -1,6 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-
 <?php
 session_start();
 include('./db_connect.php');
@@ -10,6 +7,45 @@ if (!isset($_SESSION['system'])) {
     foreach ($system as $k => $v) {
         $_SESSION['system'][$k] = $v;
     }
+}
+
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
+//required files
+require 'phpmailer/src/Exception.php';
+require 'phpmailer/src/PHPMailer.php';
+require 'phpmailer/src/SMTP.php';
+
+//Create an instance; passing `true` enables exceptions
+if (isset($_GET['email'])) {
+
+    $mail = new PHPMailer(true);
+    $email = $_GET['email'];
+    //Server settings
+    $mail->isSMTP();                              //Send using SMTP
+    $mail->Host       = 'smtp.gmail.com';       //Set the SMTP server to send through
+    $mail->SMTPAuth   = true;             //Enable SMTP authentication
+    $mail->Username   = 'uyyn90786@gmail.com';   //SMTP write your email
+    $mail->Password   = 'vnbovrgzflequvem';      //SMTP password
+    $mail->SMTPSecure = 'ssl';            //Enable implicit SSL encryption
+    $mail->Port       = 465;
+
+    //Recipients
+    $mail->setFrom($email); // Sender Email and name
+    $mail->addAddress($email);     //Add a recipient email  
+    $mail->addReplyTo('uyyn90786@gmail.com'); // reply to sender email
+
+    //Content
+    $mail->isHTML(true);               //Set email format to HTML
+    $mail->Subject =  'Password Reset Request';   // email subject headings
+    $mail->Body    = 'Dear user, 
+                You have requested to reset your password. 
+                Please follow the link below to reset your password: 
+                https://www.youtube.com/watch?v=dQw4w9WgXcQ'; //email message
+
+    // Success sent message alert
+    $mail->send();
 }
 ?>
 
@@ -45,7 +81,8 @@ if (!isset($_SESSION['system'])) {
         <div class="wrapper-forgot-2">
             <h2 id="title1Main"> Reset Password </h2>
             <div class="box">
-                <p class="message">Check your email for a link to reset your password. If it doesn’t appear within a few minutes, check your spam folder.</p>
+                <p class="message">Check your email '<?php echo isset($_GET['email']) ? $_GET['email'] : ''; ?>' for a link to reset your password. If it doesn’t appear within a few minutes, check your spam folder.</p>
+
             </div>
         </div>
     </section>
@@ -64,5 +101,3 @@ if (!isset($_SESSION['system'])) {
         });
     </script>
 </body>
-
-</html>

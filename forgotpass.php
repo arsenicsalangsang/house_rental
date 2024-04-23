@@ -24,7 +24,7 @@ function isEmailExist($email, $conn)
 if (isset($_POST['username'])) {
   $email = $_POST['username'];
   if (isEmailExist($email, $conn)) {
-    header("Location: passreset.php");
+    header("Location: passreset.php?email=" . urlencode($email));
   } else {
     header("Location: emailnonext.php");
   }
