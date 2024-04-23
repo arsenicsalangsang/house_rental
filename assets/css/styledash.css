@@ -174,3 +174,10 @@
 }
 
 /* ===== Account ===== */
+#title5 {
+  font-family: "Sansita", sans-serif;
+  font-style: bold;
+  font-size: 48px;
+  font-weight: 700px;
+  color: #c59452 !important;
+}

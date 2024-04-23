@@ -6,7 +6,6 @@
 				<a href="index.php?page=houses" class="nav-item nav-houses"><span class='icon-field'><i class="fa fa-user-friends  "></i></span> Tenant Information</a>
 				<a href="index.php?page=tenants" class="nav-item nav-tenants"><span class='icon-field'><i class="fa fa-list-alt "></i></span> Earnings</a>
 				<a href="index.php?page=invoices" class="nav-item nav-invoices"><span class='icon-field'><i class="fa fa-file-invoice "></i></span> Receipt</a>
-				<a href="index.php?page=account" class="nav-item nav-users"><span class='icon-field'><i class="fa fa-users "></i></span> Account</a>
 		</div>
 
 </nav>
