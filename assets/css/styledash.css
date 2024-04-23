@@ -174,10 +174,192 @@
 }
 
 /* ===== Account ===== */
-#title5 {
+.title-account {
   font-family: "Sansita", sans-serif;
-  font-style: bold;
+  font-weight: bold;
   font-size: 48px;
-  font-weight: 700px;
   color: #c59452 !important;
+  margin-left: 18%;
+}
+
+.account-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #e1d5c9 !important;
+  max-width: 90%;
+  height: 220px;
+  padding: 60px;
+  box-sizing: border-box;
+  margin-left: 16.3%;
+  margin-right: auto;
+}
+
+.profilepic {
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 50%;
+  position: relative;
+  top: 50px;
+}
+
+.account-name,
+.account-status {
+  font-family: "Roboto", sans-serif;
+  color: black;
+  font-size: 24px;
+  position: relative;
+  left: 130px;
+  top: -45px;
+}
+
+.account-status {
+  font-size: 12px;
+}
+
+.button-container {
+  position: relative;
+  left: 780px;
+  top: -80px;
+}
+
+#updateprofile {
+  background-color: #c59452;
+  color: white;
+  border-radius: 10px;
+  border: 2px solid #c59452;
+  padding: 10px;
+  margin-left: 10px;
+}
+
+#changeprofile {
+  background-color: #e1d5c9;
+  color: black;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+#changeprofile,
+#updateprofile,
+#updatepass {
+  width: 185px;
+  height: 48px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+.box-information {
+  width: 560px;
+  height: 580px;
+  position: relative;
+  top: 80px;
+  left: 290px;
+}
+
+.box-information1 {
+  width: 560px;
+  height: 580px;
+  background-color: #e1d5c9;
+  position: relative;
+  top: -760px;
+  left: 900px;
+}
+
+.title-box,
+.box-title,
+.box-title1,
+.box-description,
+.title-inputPass,
+.box-description1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  color: black;
+  position: relative;
+}
+
+.title-box {
+  font-size: 28px;
+  text-align: center;
+  top: 50px;
+}
+
+.box-title {
+  font-size: 20px;
+  top: 80px;
+  left: 30px;
+}
+
+.line {
+  width: 500px;
+  border: 1px solid #0000001a;
+  position: relative;
+  top: 65px;
+  left: 30px;
+}
+
+.box-description {
+  font-size: 16px;
+  font-weight: 400;
+  top: 70px;
+  left: 30px;
+}
+
+#input-form-password {
+  position: relative;
+  left: 30px;
+  top: 90px;
+}
+
+.title-inputPass {
+  margin-bottom: 2px;
+  margin-left: 5px;
+  font-size: 14px;
+}
+
+.custom-inputPass {
+  padding: 10px;
+  margin-bottom: 8px;
+  border: none;
+  border-radius: 10px;
+  background-color: white;
+  outline: none;
+  width: 500px;
+}
+
+#updatepass {
+  width: 160px;
+  height: 48px;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: #c59452;
+  color: white;
+  border-radius: 10px;
+  border: 2px solid #c59452;
+  padding: 10px;
+  margin-left: 180px;
+  margin-top: 10px;
+}
+
+.box-description1 {
+  font-size: 16px;
+  font-weight: 400;
+  top: -202px;
+  left: 320px;
+}
+
+.box-title1 {
+  font-size: 20px;
+  top: -190px;
+  left: 320px;
+}
+
+.line1 {
+  width: 500px;
+  border: 1px solid #0000001a;
+  position: relative;
+  top: -205px;
+  left: 320px;
 }
