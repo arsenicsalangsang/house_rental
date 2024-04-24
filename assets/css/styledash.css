@@ -736,23 +736,46 @@
   margin-bottom: -5px;
 }
 
+.details-title,
+.details-description {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  color: black;
+  position: relative;
+}
+
+.details-title {
+  font-size: 40px;
+  top: 50px;
+  left: 400px;
+}
+
+.details-description {
+  font-size: 16px;
+  font-weight: 400;
+  top: 50px;
+  left: 550px;
+}
+
 #input-form-receipt {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 50px;
   position: relative;
-  top: 150px;
+  top: 50px;
 }
 
 .custom-input-receipt {
   padding: 10px;
   margin-bottom: 8px;
   border: none;
-  border-radius: 10px;
+  border-radius: 6px;
   background-color: white;
+  border: 1px solid grey;
   outline: none;
   width: 600px;
+  height: 36px;
 }
 
 .title-input-receipt {
@@ -762,7 +785,7 @@
   font-size: 14px;
 }
 
-#receupt-confirmbtn {
+#receipt-submitbtn {
   background-color: #c59452;
   color: white;
   border-radius: 10px;
@@ -770,12 +793,17 @@
   padding: 10px;
 }
 
-#receipt-submitbtn {
-  background-color: #e1d5c9;
-  color: black;
-  border: 2px solid black;
+#receipt-confirmbtn {
+  background-color: black;
+  color: white;
   border-radius: 10px;
   padding: 10px;
+}
+
+#receipt-confirmbtn,
+#receipt-submitbtn {
+  width: 160px;
+  height: 48px;
 }
 
 .button-container-receipt {

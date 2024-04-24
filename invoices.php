@@ -53,7 +53,7 @@
 			<input type="text" name="payment" placeholder="Enter your email" class="custom-input-receipt">
 		</div>
 		<div>
-			<h4 class = "title-input-receipt">First Payment Amount</h4>
+			<h4 class = "title-input-receipt">Payment Amount</h4>
 			<input type="text" name="paymentamount" placeholder="Enter amount" class="custom-input-receipt">
 		</div>
 		<div>
