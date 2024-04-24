@@ -34,9 +34,29 @@
 			<p class = "title-wrapperbox">Select Apartment</p>
 			<p class = "wrapper-box1-description">Select apartment or tenant<br> and check previous transaction</p>
 			<p class = "title-button">Select Apartment</p>
-			<div class = "box-options">hello</div>
-			<p class = "title-button">Select Tenant</p>
-			<div class = "box-options1">hello</div>
+			<?php
+				$category_query = $conn->query("SELECT DISTINCT category_id FROM houses");
+				while ($category_row = $category_query->fetch_assoc()) {
+					$category_id = $category_row['category_id'];
+					?>
+					<div class="box-options">
+						 <?php echo $category_id; ?>
+					</div>
+					<?php
+				}
+			?>
+			<p class = "title-button1">Select Tenant</p>
+			<?php
+			$tenant_query = $conn->query("SELECT * FROM tenants");
+			while ($tenant_row = $tenant_query->fetch_assoc()) {
+				$fullname = $tenant_row['firstname'] . " " . $tenant_row['middlename'] . " " . $tenant_row['lastname'];
+				?>
+				<div class="box-options1">
+					<?php echo $fullname; ?>
+				</div>
+				<?php
+			}
+			?>
 			<button type="submit" id="transactionbtn">Transactions</button>
 		</div>
 		<div class = "wrapper-box2">

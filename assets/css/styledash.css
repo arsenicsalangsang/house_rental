@@ -423,8 +423,7 @@
 .wrapper-box1 {
   width: 560px;
   height: 400px;
-  background-color: blue;
-  margin-left: 50px;
+  margin-left: 80px;
   margin-top: 250px;
 }
 
@@ -452,46 +451,67 @@
 .title-button,
 #transactionbtn,
 .box-options,
-.box-options1 {
+.box-options1,
+.title-button1 {
   color: black;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
-  position: relative;
 }
 
 .title-wrapperbox {
   font-weight: 700;
   font-size: 28px;
-  top: 10px;
+  position: relative;
+  top: 25px;
 }
 
 .wrapper-box1-description {
-  top: 5px;
+  position: relative;
+  top: 30px;
+}
+
+.title-button {
+  position: relative;
+  top: 50px;
+  font-weight: 700;
+}
+
+.title-button1 {
+  position: relative;
+  top: 20px;
+  font-weight: 700;
 }
 
 #transactionbtn {
+  position: relative;
   background-color: #c59452;
   color: white;
   border-radius: 10px;
   border: 2px solid #c59452;
   padding: 10px;
+  width: 160px;
+  top: 43px;
 }
 
 .box-options {
-  background-color: white;
+  background-color: #0000000d;
   width: 60px;
   height: 30px;
   border-radius: 6px;
   text-align: center;
   padding: 2px;
+  margin-top: 55px;
+  margin-right: 5px;
 }
 
 .box-options1 {
-  background-color: white;
+  background-color: #0000000d;
   width: 130px;
   height: 30px;
   border-radius: 6px;
   text-align: center;
   padding: 5px;
   font-size: 12px;
+  margin-top: 25px;
+  margin-right: 5px;
 }
