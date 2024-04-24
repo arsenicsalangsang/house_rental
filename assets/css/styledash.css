@@ -810,3 +810,115 @@
   margin-top: 15px;
   text-align: center;
 }
+
+/* ===== Manage Apartment ===== */
+.apartment-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #e1d5c9 !important;
+  width: 1269px;
+  height: 245px;
+  padding: 60px;
+  margin-left: -8px;
+  margin-top: -59px;
+  box-sizing: border-box;
+}
+
+.apartment-content {
+  margin-bottom: 50px;
+}
+
+.table-style {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  color: black;
+  position: relative;
+  top: 20px;
+  left: 200px;
+}
+
+.edit_house {
+  border-radius: 6px;
+  background-color: #c59452;
+  color: white;
+  border: 1px solid #c59452;
+}
+
+.delete_house {
+  border-radius: 6px;
+  background-color: black;
+  color: white;
+}
+
+.wrapper-apartment {
+  align-items: center;
+  background-color: #e1d5c9;
+  width: 1269px;
+  height: 620px;
+  margin-left: -8px;
+  margin-top: 50px;
+}
+
+#title-apartment {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  color: black;
+  position: relative;
+  top: 50px;
+  left: 450px;
+}
+
+.input-form-apartment {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  position: relative;
+  top: 50px;
+}
+
+.custom-input-apartment {
+  padding: 10px;
+  margin-bottom: 2px;
+  border: none;
+  border-radius: 10px;
+  background-color: white;
+  outline: none;
+  width: 500px;
+  margin-bottom: 15px;
+}
+
+.title-input-apartment {
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 2px;
+  margin-left: 5px;
+  font-size: 14px;
+  color: black;
+}
+
+#addapartmentbtn {
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  position: relative;
+  background-color: #c59452;
+  color: white;
+  border-radius: 10px;
+  border: 2px solid #c59452;
+  padding: 10px;
+  width: 160px;
+}
+
+.summary-data {
+  margin-top: 50px;
+}
+
+.summary-title {
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  margin-left: 550px;
+}
