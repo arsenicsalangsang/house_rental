@@ -39,9 +39,9 @@
 				while ($category_row = $category_query->fetch_assoc()) {
 					$category_id = $category_row['category_id'];
 					?>
-					<div class="box-options">
+					<button class="box-options">
 						 <?php echo $category_id; ?>
-					</div>
+					</button>
 					<?php
 				}
 			?>
@@ -51,9 +51,9 @@
 			while ($tenant_row = $tenant_query->fetch_assoc()) {
 				$fullname = $tenant_row['firstname'] . " " . $tenant_row['middlename'] . " " . $tenant_row['lastname'];
 				?>
-				<div class="box-options1">
+				<button class="box-options1">
 					<?php echo $fullname; ?>
-				</div>
+				</button>
 				<?php
 			}
 			?>

@@ -490,7 +490,8 @@
   border: 2px solid #c59452;
   padding: 10px;
   width: 160px;
-  top: 43px;
+  top: 70px;
+  right: 140px;
 }
 
 .box-options {
@@ -500,7 +501,7 @@
   border-radius: 6px;
   text-align: center;
   padding: 2px;
-  margin-top: 55px;
+  margin-top: 40px;
   margin-right: 5px;
 }
 
@@ -512,7 +513,7 @@
   text-align: center;
   padding: 5px;
   font-size: 12px;
-  margin-top: 25px;
+  margin-top: 10px;
   margin-right: 5px;
 }
 
@@ -690,4 +691,47 @@
 .contract-box-text,
 .contract-end-text {
   top: 30px;
+}
+
+/* ===== Receipt ===== */
+.wrapper-receipt {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #e1d5c9 !important;
+  width: 1268px;
+  height: 520px;
+  padding: 60px 0 0 0;
+  gap: 60px;
+  box-sizing: border-box;
+  position: relative;
+  left: -8px;
+  top: 10px;
+}
+
+#generatebtn,
+.title-wrapperbox2 {
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  position: relative;
+}
+
+#generatebtn {
+  background-color: #c59452;
+  color: white;
+  border-radius: 10px;
+  border: 2px solid #c59452;
+  padding: 10px;
+  width: 160px;
+  top: 70px;
+  right: 140px;
+}
+
+.title-wrapperbox2 {
+  font-weight: 700;
+  font-size: 28px;
+  top: 80px;
+  left: 50px;
+  margin-bottom: -5px;
 }
