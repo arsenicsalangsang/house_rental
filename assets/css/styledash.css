@@ -363,3 +363,135 @@
   top: -205px;
   left: 320px;
 }
+
+/* ===== Earnings ===== */
+.title-earnings {
+  font-family: "Sansita", sans-serif;
+  font-weight: bold;
+  font-size: 48px;
+  color: #c59452 !important;
+  margin-top: -65px;
+  margin-left: 30px;
+}
+
+.two-box {
+  margin-top: 20px;
+}
+
+.box-one {
+  width: 560px;
+  height: 250px;
+  background-color: white;
+  margin-left: 50px;
+}
+
+.box-two {
+  width: 560px;
+  height: 250px;
+  background-color: #e1d5c9;
+  position: relative;
+  left: 650px;
+  top: -250px;
+}
+
+.content-text {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  color: black;
+  position: relative;
+  font-size: 28px;
+  top: 65px;
+  margin-left: 80px;
+}
+
+.data-card-earnings {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  margin-top: 20px;
+  margin-left: 170px;
+  position: relative;
+  bottom: 180px;
+  right: 150px;
+  gap: 150px;
+}
+
+.wrapper-box {
+  position: relative;
+  top: 50px;
+}
+
+.wrapper-box1 {
+  width: 560px;
+  height: 400px;
+  background-color: blue;
+  margin-left: 50px;
+  margin-top: 250px;
+}
+
+.wrapper-box2 {
+  width: 560px;
+  height: 400px;
+  background-color: white;
+  position: relative;
+  left: 650px;
+  bottom: 400px;
+}
+
+.wrapper-text {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  color: black;
+  position: relative;
+  font-size: 28px;
+  top: 120px;
+  margin-left: 80px;
+}
+
+.title-wrapperbox,
+.wrapper-box1-description,
+.title-button,
+#transactionbtn,
+.box-options,
+.box-options1 {
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  position: relative;
+}
+
+.title-wrapperbox {
+  font-weight: 700;
+  font-size: 28px;
+  top: 10px;
+}
+
+.wrapper-box1-description {
+  top: 5px;
+}
+
+#transactionbtn {
+  background-color: #c59452;
+  color: white;
+  border-radius: 10px;
+  border: 2px solid #c59452;
+  padding: 10px;
+}
+
+.box-options {
+  background-color: white;
+  width: 60px;
+  height: 30px;
+  border-radius: 6px;
+  text-align: center;
+  padding: 2px;
+}
+
+.box-options1 {
+  background-color: white;
+  width: 130px;
+  height: 30px;
+  border-radius: 6px;
+  text-align: center;
+  padding: 5px;
+  font-size: 12px;
+}
