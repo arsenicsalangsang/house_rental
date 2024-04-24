@@ -735,3 +735,50 @@
   left: 50px;
   margin-bottom: -5px;
 }
+
+#input-form-receipt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  position: relative;
+  top: 150px;
+}
+
+.custom-input-receipt {
+  padding: 10px;
+  margin-bottom: 8px;
+  border: none;
+  border-radius: 10px;
+  background-color: white;
+  outline: none;
+  width: 600px;
+}
+
+.title-input-receipt {
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 2px;
+  margin-left: 5px;
+  font-size: 14px;
+}
+
+#receupt-confirmbtn {
+  background-color: #c59452;
+  color: white;
+  border-radius: 10px;
+  border: 2px solid #c59452;
+  padding: 10px;
+}
+
+#receipt-submitbtn {
+  background-color: #e1d5c9;
+  color: black;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.button-container-receipt {
+  margin-top: 15px;
+  text-align: center;
+}

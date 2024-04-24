@@ -43,3 +43,34 @@
 		</div>
 	</div>
 </div>
+
+<div class = "details">
+	<p class = "details-title"> Generate Receipt Details </p>
+	<p class = "details-description">Fill in payment details</p>
+	<form id = "input-form-receipt">
+		<div>
+			<h4 class = "title-input-receipt">Payment Type</h4>
+			<input type="text" name="payment" placeholder="Enter your email" class="custom-input-receipt">
+		</div>
+		<div>
+			<h4 class = "title-input-receipt">First Payment Amount</h4>
+			<input type="text" name="paymentamount" placeholder="Enter amount" class="custom-input-receipt">
+		</div>
+		<div>
+			<h4 class = "title-input-receipt">Payment Date</h4>
+			<input type="text" name="paymentdate" placeholder="Select Date" class="custom-input-receipt">
+		</div>
+		<div>
+			<h4 class = "title-input-receipt">Payment Time</h4>
+			<input type="text" name="paymenttime" placeholder="Select Time" class="custom-input-receipt">
+		</div>
+		<div>
+			<h4 class = "title-input-receipt">Optional Notes</h4>
+			<input type="text" name="notes" class="custom-input-receipt">
+		</div>
+		<div class="button-container-receipt">
+			<button type="button" id="receipt-confirmbtn">Confirm</button>
+			<button type="submit" id="receipt-submitbtn">Submit</button>
+		</div>
+	</form>
+</div>
