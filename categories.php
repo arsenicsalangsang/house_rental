@@ -68,7 +68,7 @@
 			</div>
 			<div>
 				<h4 class = "title-input-apartment">Optional: Size </h4>
-				<input type="text" name="apartmentsize" placeholder="Enter size in sq. meters" class="custom-input-apartment">
+				<input type="text" name="apartmentsize" placeholder="Enter size in sq meters" class="custom-input-apartment">
 			</div>
 			<div>
 				<h4 class = "title-input-apartment">Address </h4>
@@ -81,4 +81,16 @@
 
 <div class = "summary-data">
 	<p class = "summary-title">Summary</p>
+	<div class = "data-card-apartment">
+		<div class = "card-data-apartment">
+			<p class = "title-card">Monthly Earnings</p>
+			<p class = "data-analytic"> data </p>
+			<p class = "data-analytic-2"> data </p>
+		</div>
+		<div class = "card-data-apartment">
+			<p class = "title-card">Daily Earnings</p>
+			<p class = "data-analytic"> data </p>
+			<p class = "data-analytic-2"> data </p>
+		</div>
+	</div>
 </div>
