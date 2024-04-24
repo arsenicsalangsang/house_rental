@@ -38,22 +38,38 @@ if(!isset($_SESSION['login_id'])) {
                 <p class = "earning-box2-title"> Tenant Transaction </p>
                 <div class = "transaction-content">
                     <div class = "transaction-box">
-                        <p> Total Paid </p>
-                        <p>Since December 11, 2023</p>
-                        <p>₱**,***.**</p>
+                        <img src = "assets\pictures\totalpaid.png" id = "icon1">
+                        <p class = "transaction-box-title"> Total Paid </p>
+                        <p class = "transaction-box-date">Since December 11, 2023</p>
+                        <p class = "transaction-box-total">₱**,***.**</p>
                     </div>
                     <div class = "transaction-box1">
-                        <p> Last Full Payment </p>
-                        <p>February 14, 2024</p>
-                        <p>₱**,***.**</p>
+                        <img src = "assets\pictures\lastpayment.png" id = "icon1">
+                        <p class = "transaction-box-title"> Last Full Payment </p>
+                        <p class = "transaction-box-date">February 14, 2024</p>
+                        <p class = "transaction-box-total">₱**,***.**</p>
                     </div>
                     <div class = "transaction-box2">
-                        <p> Payment Due </p>
-                        <p>March 15, 2024</p>
-                        <p>₱**,***.**</p>
+                        <img src = "assets\pictures\duedate.png" id = "icon1">
+                        <p class = "transaction-box-title"> Payment Due </p>
+                        <p class = "transaction-box-date">March 15, 2024</p>
+                        <p class = "transaction-box-total">₱**,***.**</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+<div class = "transaction-banner1">
+    <div class = "contract-boxes">
+        <div class = "contract-box">
+            <p class = "contract-box-text">Contract started in<br>December 11, 2023</p>
+        </div>
+        <div class = "contract-monthly">
+            <p class = "contract-monthly-text">With a monthly <br>rent of<br>₱**,***.**</p>
+        </div>
+        <div class = "contract-end">
+            <p class = "contract-end-text">Contract ends in<br>December 11, 2025</p>
+        </div>
+    </div>
+</div>
 </body>

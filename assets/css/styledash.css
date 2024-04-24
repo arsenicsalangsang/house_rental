@@ -580,7 +580,6 @@
 .transaction-content {
   width: 500px;
   height: 250px;
-  background-color: blue;
   position: relative;
   top: 60px;
   left: 30px;
@@ -589,13 +588,11 @@
 .transaction-box {
   width: 166px;
   height: 250px;
-  background-color: red;
 }
 
 .transaction-box1 {
   width: 166px;
   height: 250px;
-  background-color: pink;
   position: relative;
   bottom: 250px;
   left: 166px;
@@ -604,8 +601,93 @@
 .transaction-box2 {
   width: 166px;
   height: 250px;
-  background-color: violet;
   position: relative;
   bottom: 500px;
   left: 333px;
+}
+
+#icon1 {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+  position: relative;
+  left: 30px;
+}
+
+.transaction-box-title,
+.transaction-box-date,
+.transaction-box-total {
+  font-family: "Roboto", sans-serif;
+  color: black;
+  font-weight: 400;
+  text-align: center;
+}
+
+.transaction-box-title {
+  font-size: 16px;
+}
+
+.transaction-box-date {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 12px;
+  margin-top: -10px;
+}
+
+.transaction-box-total {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.transaction-banner1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 90%;
+  height: 324px;
+  padding: 60px;
+  box-sizing: border-box;
+  margin-left: 16.5%;
+  margin-right: auto;
+  margin-top: 50px;
+}
+
+.contract-box {
+  width: 350px;
+  height: 150px;
+  position: relative;
+  top: 150px;
+}
+
+.contract-monthly {
+  width: 350px;
+  height: 150px;
+  background-color: #e1d5c9 !important;
+  position: relative;
+  left: 400px;
+  top: 0;
+}
+
+.contract-end {
+  width: 350px;
+  height: 150px;
+  position: relative;
+  left: 800px;
+  bottom: 150px;
+}
+
+.contract-box-text,
+.contract-monthly-text,
+.contract-end-text {
+  font-family: "Roboto", sans-serif;
+  color: black;
+  font-weight: 700;
+  font-size: 28px;
+  margin-left: 10px;
+  position: relative;
+  top: 10px;
+}
+
+.contract-box-text,
+.contract-end-text {
+  top: 30px;
 }
