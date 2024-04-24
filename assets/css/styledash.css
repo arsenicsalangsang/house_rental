@@ -515,3 +515,97 @@
   margin-top: 25px;
   margin-right: 5px;
 }
+
+/* ===== Earnings Transaction ===== */
+
+.transaction-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #e1d5c9 !important;
+  max-width: 90%;
+  height: 520px;
+  padding: 60px;
+  box-sizing: border-box;
+  margin-left: 16.5%;
+  margin-right: auto;
+}
+
+.earning-box1 {
+  width: 560px;
+  height: 400px;
+  margin-left: -10px;
+  margin-top: 400px;
+}
+
+.earning-box2 {
+  width: 560px;
+  height: 400px;
+  background-color: white;
+  position: relative;
+  left: 600px;
+  bottom: 400px;
+  border-radius: 20px;
+}
+
+.profilepic-earning {
+  width: 150px;
+  height: 150px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 50%;
+  position: relative;
+  top: 115px;
+  left: 50px;
+}
+
+.tenant-name,
+.tenant-apartment,
+.earning-box2-title {
+  font-family: "Roboto", sans-serif;
+  color: black;
+  font-size: 24px;
+  position: relative;
+  left: 220px;
+  top: 10px;
+}
+
+.earning-box2-title {
+  font-weight: 700;
+  font-size: 28px;
+  left: 165px;
+  top: 50px;
+}
+
+.transaction-content {
+  width: 500px;
+  height: 250px;
+  background-color: blue;
+  position: relative;
+  top: 60px;
+  left: 30px;
+}
+
+.transaction-box {
+  width: 166px;
+  height: 250px;
+  background-color: red;
+}
+
+.transaction-box1 {
+  width: 166px;
+  height: 250px;
+  background-color: pink;
+  position: relative;
+  bottom: 250px;
+  left: 166px;
+}
+
+.transaction-box2 {
+  width: 166px;
+  height: 250px;
+  background-color: violet;
+  position: relative;
+  bottom: 500px;
+  left: 333px;
+}
