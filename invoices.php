@@ -49,8 +49,12 @@
 	<p class = "details-description">Fill in payment details</p>
 	<form id = "input-form-receipt">
 		<div>
-			<h4 class = "title-input-receipt">Payment Type</h4>
-			<input type="text" name="payment" placeholder="Enter your email" class="custom-input-receipt">
+			<h4 class = "title-input-receipt1">Payment Type</h4>
+			<div class = "button-container-receipt">
+				<button type="button" id="fullbtn">Full Payment</button>
+				<button type="submit" id="partialbtn">Partial Payment</button>
+				<button type="submit" id="otherbtn">Other Payment</button>
+			</div>
 		</div>
 		<div>
 			<h4 class = "title-input-receipt">Payment Amount</h4>

@@ -778,11 +778,17 @@
   height: 36px;
 }
 
-.title-input-receipt {
+.title-input-receipt,
+.title-input-receipt1 {
   font-family: "Roboto", sans-serif;
   margin-bottom: 2px;
   margin-left: 5px;
   font-size: 14px;
+  color: black;
+}
+
+.title-input-receipt1 {
+  margin-left: -5px;
 }
 
 #receipt-submitbtn {
@@ -809,6 +815,20 @@
 .button-container-receipt {
   margin-top: 15px;
   text-align: center;
+}
+
+#fullbtn,
+#partialbtn,
+#otherbtn {
+  margin-top: -8px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  width: 193px;
+  height: 30px;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-color: rgba(0, 0, 0, 0.05);
+  margin-bottom: 5px;
 }
 
 /* ===== Manage Apartment ===== */
