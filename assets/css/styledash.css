@@ -1,0 +1,1001 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap");
+
+/* ===== Topbar ===== */
+#desktop-nav {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+#logoimg {
+  width: 50px;
+  margin-right: 10px;
+  margin-left: 70px;
+}
+
+.logoText {
+  font-family: "Sansita", sans-serif;
+  font-style: italic;
+  font-size: 25px;
+  font-weight: bold;
+  color: #c59452;
+  margin-right: 74%;
+}
+
+#account_settings {
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+/* ===== Navbar ===== */
+
+.collapse a {
+  text-indent: 10px;
+}
+
+.sidebar-style {
+  background-color: #3c34340d !important;
+}
+
+.sidebar-style .sidebar-list a:hover {
+  background-color: rgba(60, 52, 52, 0.2);
+}
+
+.sidebar-style .sidebar-list a:active {
+  background-color: rgba(60, 52, 52, 0.4);
+}
+
+/* ===== Home ===== */
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #e1d5c9 !important;
+  width: 1268px;
+  height: 520px;
+  padding: 60px 0 0 0;
+  gap: 60px;
+  box-sizing: border-box;
+  position: relative;
+  left: -8px;
+  top: -58px;
+}
+
+.content {
+  margin-left: 50px;
+  margin-bottom: 90px;
+}
+
+#title,
+#description {
+  font-family: "Roboto", sans-serif;
+  color: black;
+}
+
+#hppic {
+  flex-shrink: 0;
+  width: 700px;
+  position: absolute;
+  right: 40px;
+  top: 75px;
+}
+
+#stats {
+  position: relative;
+  top: 10px;
+}
+
+#title3,
+#descr {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+}
+
+.quickstats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  margin-top: 50px;
+  margin-left: 170px;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  width: 200px;
+  font-weight: 300;
+  border-right: 10px;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
+#icon {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 20px;
+}
+
+#title4 {
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+}
+
+.data-card {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  margin-top: 90px;
+  margin-left: 170px;
+  position: relative;
+  right: 140px;
+  gap: 150px;
+}
+
+.card-data {
+  word-wrap: break-word;
+  background-color: white;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+  width: 390px;
+  height: 125px;
+}
+
+.title-card {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  position: relative;
+  left: 10px;
+  top: 10px;
+  color: black;
+}
+
+.data-analytic {
+  font-family: "Roboto", sans-serif;
+  color: black;
+  font-size: 28px;
+  position: relative;
+  left: 10px;
+  margin-bottom: 3px;
+}
+
+.data-analytic-2 {
+  font-family: "Roboto", sans-serif;
+  color: black;
+  font-size: 16px;
+  position: relative;
+  left: 10px;
+}
+
+/* ===== Account ===== */
+.title-account {
+  font-family: "Sansita", sans-serif;
+  font-weight: bold;
+  font-size: 48px;
+  color: #c59452 !important;
+  margin-left: 18%;
+}
+
+.account-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #e1d5c9 !important;
+  max-width: 90%;
+  height: 220px;
+  padding: 60px;
+  box-sizing: border-box;
+  margin-left: 16.3%;
+  margin-right: auto;
+}
+
+.profilepic {
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 50%;
+  position: relative;
+  top: 50px;
+}
+
+.account-name,
+.account-status {
+  font-family: "Roboto", sans-serif;
+  color: black;
+  font-size: 24px;
+  position: relative;
+  left: 130px;
+  top: -45px;
+}
+
+.account-status {
+  font-size: 12px;
+}
+
+.button-container {
+  position: relative;
+  left: 780px;
+  top: -80px;
+}
+
+#updateprofile {
+  background-color: #c59452;
+  color: white;
+  border-radius: 10px;
+  border: 2px solid #c59452;
+  padding: 10px;
+  margin-left: 10px;
+}
+
+#changeprofile {
+  background-color: #e1d5c9;
+  color: black;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+#changeprofile,
+#updateprofile,
+#updatepass {
+  width: 185px;
+  height: 48px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+.box-information {
+  width: 560px;
+  height: 580px;
+  position: relative;
+  top: 80px;
+  left: 290px;
+}
+
+.box-information1 {
+  width: 560px;
+  height: 580px;
+  background-color: #e1d5c9;
+  position: relative;
+  top: -760px;
+  left: 900px;
+}
+
+.title-box,
+.box-title,
+.box-title1,
+.box-description,
+.title-inputPass,
+.box-description1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  color: black;
+  position: relative;
+}
+
+.title-box {
+  font-size: 28px;
+  text-align: center;
+  top: 50px;
+}
+
+.box-title {
+  font-size: 20px;
+  top: 80px;
+  left: 30px;
+}
+
+.line {
+  width: 500px;
+  border: 1px solid #0000001a;
+  position: relative;
+  top: 65px;
+  left: 30px;
+}
+
+.box-description {
+  font-size: 16px;
+  font-weight: 400;
+  top: 70px;
+  left: 30px;
+}
+
+#input-form-password {
+  position: relative;
+  left: 30px;
+  top: 90px;
+}
+
+.title-inputPass {
+  margin-bottom: 2px;
+  margin-left: 5px;
+  font-size: 14px;
+}
+
+.custom-inputPass {
+  padding: 10px;
+  margin-bottom: 8px;
+  border: none;
+  border-radius: 10px;
+  background-color: white;
+  outline: none;
+  width: 500px;
+}
+
+#updatepass {
+  width: 160px;
+  height: 48px;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: #c59452;
+  color: white;
+  border-radius: 10px;
+  border: 2px solid #c59452;
+  padding: 10px;
+  margin-left: 180px;
+  margin-top: 10px;
+}
+
+.box-description1 {
+  font-size: 16px;
+  font-weight: 400;
+  top: -202px;
+  left: 320px;
+}
+
+.box-title1 {
+  font-size: 20px;
+  top: -190px;
+  left: 320px;
+}
+
+.line1 {
+  width: 500px;
+  border: 1px solid #0000001a;
+  position: relative;
+  top: -205px;
+  left: 320px;
+}
+
+/* ===== Earnings ===== */
+.title-earnings {
+  font-family: "Sansita", sans-serif;
+  font-weight: bold;
+  font-size: 48px;
+  color: #c59452 !important;
+  margin-top: -65px;
+  margin-left: 30px;
+}
+
+.two-box {
+  margin-top: 20px;
+}
+
+.box-one {
+  width: 560px;
+  height: 250px;
+  background-color: white;
+  margin-left: 50px;
+}
+
+.box-two {
+  width: 560px;
+  height: 250px;
+  background-color: #e1d5c9;
+  position: relative;
+  left: 650px;
+  top: -250px;
+}
+
+.content-text {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  color: black;
+  position: relative;
+  font-size: 28px;
+  top: 65px;
+  margin-left: 80px;
+}
+
+.data-card-earnings {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  margin-top: 20px;
+  margin-left: 170px;
+  position: relative;
+  bottom: 180px;
+  right: 150px;
+  gap: 150px;
+}
+
+.wrapper-box {
+  position: relative;
+  top: 50px;
+}
+
+.wrapper-box1 {
+  width: 560px;
+  height: 400px;
+  margin-left: 80px;
+  margin-top: 250px;
+}
+
+.wrapper-box2 {
+  width: 560px;
+  height: 400px;
+  background-color: white;
+  position: relative;
+  left: 650px;
+  bottom: 400px;
+}
+
+.wrapper-text {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  color: black;
+  position: relative;
+  font-size: 28px;
+  top: 120px;
+  margin-left: 80px;
+}
+
+.title-wrapperbox,
+.wrapper-box1-description,
+.title-button,
+#transactionbtn,
+.box-options,
+.box-options1,
+.title-button1 {
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+.title-wrapperbox {
+  font-weight: 700;
+  font-size: 28px;
+  position: relative;
+  top: 25px;
+}
+
+.wrapper-box1-description {
+  position: relative;
+  top: 30px;
+}
+
+.title-button {
+  position: relative;
+  top: 50px;
+  font-weight: 700;
+}
+
+.title-button1 {
+  position: relative;
+  top: 20px;
+  font-weight: 700;
+}
+
+#transactionbtn {
+  position: relative;
+  background-color: #c59452;
+  color: white;
+  border-radius: 10px;
+  border: 2px solid #c59452;
+  padding: 10px;
+  width: 160px;
+  top: 70px;
+  right: 140px;
+}
+
+.box-options {
+  background-color: #0000000d;
+  width: 60px;
+  height: 30px;
+  border-radius: 6px;
+  text-align: center;
+  padding: 2px;
+  margin-top: 40px;
+  margin-right: 5px;
+}
+
+.box-options1 {
+  background-color: #0000000d;
+  width: 130px;
+  height: 30px;
+  border-radius: 6px;
+  text-align: center;
+  padding: 5px;
+  font-size: 12px;
+  margin-top: 10px;
+  margin-right: 5px;
+}
+
+/* ===== Earnings Transaction ===== */
+
+.transaction-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #e1d5c9 !important;
+  max-width: 90%;
+  height: 520px;
+  padding: 60px;
+  box-sizing: border-box;
+  margin-left: 16.5%;
+  margin-right: auto;
+}
+
+.earning-box1 {
+  width: 560px;
+  height: 400px;
+  margin-left: -10px;
+  margin-top: 400px;
+}
+
+.earning-box2 {
+  width: 560px;
+  height: 400px;
+  background-color: white;
+  position: relative;
+  left: 600px;
+  bottom: 400px;
+  border-radius: 20px;
+}
+
+.profilepic-earning {
+  width: 150px;
+  height: 150px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 50%;
+  position: relative;
+  top: 115px;
+  left: 50px;
+}
+
+.tenant-name,
+.tenant-apartment,
+.earning-box2-title {
+  font-family: "Roboto", sans-serif;
+  color: black;
+  font-size: 24px;
+  position: relative;
+  left: 220px;
+  top: 10px;
+}
+
+.earning-box2-title {
+  font-weight: 700;
+  font-size: 28px;
+  left: 165px;
+  top: 50px;
+}
+
+.transaction-content {
+  width: 500px;
+  height: 250px;
+  position: relative;
+  top: 60px;
+  left: 30px;
+}
+
+.transaction-box {
+  width: 166px;
+  height: 250px;
+}
+
+.transaction-box1 {
+  width: 166px;
+  height: 250px;
+  position: relative;
+  bottom: 250px;
+  left: 166px;
+}
+
+.transaction-box2 {
+  width: 166px;
+  height: 250px;
+  position: relative;
+  bottom: 500px;
+  left: 333px;
+}
+
+#icon1 {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+  position: relative;
+  left: 30px;
+}
+
+.transaction-box-title,
+.transaction-box-date,
+.transaction-box-total {
+  font-family: "Roboto", sans-serif;
+  color: black;
+  font-weight: 400;
+  text-align: center;
+}
+
+.transaction-box-title {
+  font-size: 16px;
+}
+
+.transaction-box-date {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 12px;
+  margin-top: -10px;
+}
+
+.transaction-box-total {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.transaction-banner1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 90%;
+  height: 324px;
+  padding: 60px;
+  box-sizing: border-box;
+  margin-left: 16.5%;
+  margin-right: auto;
+  margin-top: 50px;
+}
+
+.contract-box {
+  width: 350px;
+  height: 150px;
+  position: relative;
+  top: 150px;
+}
+
+.contract-monthly {
+  width: 350px;
+  height: 150px;
+  background-color: #e1d5c9 !important;
+  position: relative;
+  left: 400px;
+  top: 0;
+}
+
+.contract-end {
+  width: 350px;
+  height: 150px;
+  position: relative;
+  left: 800px;
+  bottom: 150px;
+}
+
+.contract-box-text,
+.contract-monthly-text,
+.contract-end-text {
+  font-family: "Roboto", sans-serif;
+  color: black;
+  font-weight: 700;
+  font-size: 28px;
+  margin-left: 10px;
+  position: relative;
+  top: 10px;
+}
+
+.contract-box-text,
+.contract-end-text {
+  top: 30px;
+}
+
+/* ===== Receipt ===== */
+.wrapper-receipt {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #e1d5c9 !important;
+  width: 1268px;
+  height: 520px;
+  padding: 60px 0 0 0;
+  gap: 60px;
+  box-sizing: border-box;
+  position: relative;
+  left: -8px;
+  top: 10px;
+}
+
+#generatebtn,
+.title-wrapperbox2 {
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  position: relative;
+}
+
+#generatebtn {
+  background-color: #c59452;
+  color: white;
+  border-radius: 10px;
+  border: 2px solid #c59452;
+  padding: 10px;
+  width: 160px;
+  top: 70px;
+  right: 140px;
+}
+
+.title-wrapperbox2 {
+  font-weight: 700;
+  font-size: 28px;
+  top: 80px;
+  left: 50px;
+  margin-bottom: -5px;
+}
+
+.details-title,
+.details-description {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  color: black;
+  position: relative;
+}
+
+.details-title {
+  font-size: 40px;
+  top: 50px;
+  left: 400px;
+}
+
+.details-description {
+  font-size: 16px;
+  font-weight: 400;
+  top: 50px;
+  left: 550px;
+}
+
+#input-form-receipt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  position: relative;
+  top: 50px;
+}
+
+.custom-input-receipt {
+  padding: 10px;
+  margin-bottom: 8px;
+  border: none;
+  border-radius: 6px;
+  background-color: white;
+  border: 1px solid grey;
+  outline: none;
+  width: 600px;
+  height: 36px;
+}
+
+.title-input-receipt,
+.title-input-receipt1 {
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 2px;
+  margin-left: 5px;
+  font-size: 14px;
+  color: black;
+}
+
+.title-input-receipt1 {
+  margin-left: -5px;
+}
+
+#receipt-submitbtn {
+  background-color: #c59452;
+  color: white;
+  border-radius: 10px;
+  border: 2px solid #c59452;
+  padding: 10px;
+}
+
+#receipt-confirmbtn {
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+#receipt-confirmbtn,
+#receipt-submitbtn {
+  width: 160px;
+  height: 48px;
+}
+
+.button-container-receipt {
+  margin-top: 15px;
+  text-align: center;
+}
+
+#fullbtn,
+#partialbtn,
+#otherbtn {
+  margin-top: -8px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  width: 193px;
+  height: 30px;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-color: rgba(0, 0, 0, 0.05);
+  margin-bottom: 5px;
+}
+
+/* ===== Manage Apartment ===== */
+.apartment-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #e1d5c9 !important;
+  width: 1269px;
+  height: 245px;
+  padding: 60px;
+  margin-left: -8px;
+  margin-top: -59px;
+  box-sizing: border-box;
+}
+
+.apartment-content {
+  margin-bottom: 50px;
+}
+
+.move1 {
+  margin-top: 50px;
+  margin-left: 200px;
+}
+
+.table-style {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  color: black;
+  position: relative;
+  top: 20px;
+  left: 200px;
+}
+
+.edit_house {
+  border-radius: 6px;
+  background-color: #c59452;
+  color: white;
+  border: 1px solid #c59452;
+}
+
+.delete_house {
+  border-radius: 6px;
+  background-color: black;
+  color: white;
+}
+
+.wrapper-apartment {
+  align-items: center;
+  background-color: #e1d5c9;
+  width: 1269px;
+  height: 620px;
+  margin-left: -8px;
+  margin-top: 50px;
+}
+
+#title-apartment {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  color: black;
+  position: relative;
+  top: 50px;
+  left: 450px;
+}
+
+.input-form-apartment {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  position: relative;
+  top: 50px;
+}
+
+.custom-input-apartment {
+  padding: 10px;
+  margin-bottom: 2px;
+  border: none;
+  border-radius: 10px;
+  background-color: white;
+  outline: none;
+  width: 500px;
+  margin-bottom: 15px;
+}
+
+.title-input-apartment {
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 2px;
+  margin-left: 5px;
+  font-size: 14px;
+  color: black;
+}
+
+#addapartmentbtn {
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  position: relative;
+  background-color: #c59452;
+  color: white;
+  border-radius: 10px;
+  border: 2px solid #c59452;
+  padding: 10px;
+  width: 160px;
+}
+
+.summary-data {
+  margin-top: 50px;
+}
+
+.summary-title {
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  margin-left: 550px;
+}
+
+.data-card-apartment {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  margin-top: 20px;
+  margin-left: 170px;
+  position: relative;
+  right: 150px;
+  gap: 150px;
+}
+
+.card-data-apartment {
+  word-wrap: break-word;
+  background-color: white;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+  width: 590px;
+  height: 125px;
+}
+
+/* ===== Manage Apartment ===== */
+.edit_tenant,
+.savetenant {
+  border-radius: 6px;
+  background-color: #c59452;
+  color: white;
+  border: 1px solid #c59452;
+  height: 30px;
+  width: 80px;
+}
+
+.delete_tenant,
+.cancelbtn {
+  border-radius: 6px;
+  background-color: black;
+  color: white;
+  height: 30px;
+  width: 80px;
+}
+
+.btn-style {
+  margin-left: 80px;
+}
+
+.font-style {
+  font-family: "Roboto", sans-serif;
+}
+
+.move {
+  margin-top: -60px;
+}
