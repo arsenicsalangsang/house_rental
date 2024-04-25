@@ -962,3 +962,35 @@
   width: 590px;
   height: 125px;
 }
+
+/* ===== Manage Apartment ===== */
+.edit_tenant,
+.savetenant {
+  border-radius: 6px;
+  background-color: #c59452;
+  color: white;
+  border: 1px solid #c59452;
+  height: 30px;
+  width: 80px;
+}
+
+.delete_tenant,
+.cancelbtn {
+  border-radius: 6px;
+  background-color: black;
+  color: white;
+  height: 30px;
+  width: 80px;
+}
+
+.btn-style {
+  margin-left: 80px;
+}
+
+.font-style {
+  font-family: "Roboto", sans-serif;
+}
+
+.move {
+  margin-top: -60px;
+}
