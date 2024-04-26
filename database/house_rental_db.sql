@@ -143,7 +143,7 @@ INSERT INTO `tenants` (
   )
 VALUES (
     2,
-    'John',
+    'Johns',
     'C',
     'Smiths',
     'jsmith@sample.com',
@@ -165,20 +165,7 @@ CREATE TABLE `users` (
   `password` text NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE = InnoDB DEFAULT CHARSET = utf8mb4;
-INSERT INTO `users` (
-    `email`,
-    `firstname`,
-    `lastname`,
-    `username`,
-    `password`
-  )
-VALUES (
-    'john.doe@example.com',
-    'John',
-    'Doe',
-    'johndoe',
-    'password123'
-  );
+
 -- Indexes for dumped tables
 --
 --

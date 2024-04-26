@@ -20,7 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $hashed_password = md5($password); // Note: Consider using stronger hashing algorithms like bcrypt
 
         // Prepare and bind parameters for the SQL statement to prevent SQL injection
-        $stmt = $conn->prepare("INSERT INTO users (id, email, firstname, lastname, username, password, type) VALUES (NULL, ?, ?, ?, ?, ?, 2)");
+        $stmt = $conn->prepare("INSERT INTO users (id, email, firstname, lastname, username, password) VALUES (NULL, ?, ?, ?, ?, ?)");
         $stmt->bind_param("sssss", $email, $firstname, $lastname, $username, $hashed_password);
 
 
